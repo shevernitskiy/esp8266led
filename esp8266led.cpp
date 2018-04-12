@@ -37,7 +37,7 @@ void esp8266led::blinkDelay(int ms)
     msdelay = ms;
 }
 
-void esp8266led::blink()
+void esp8266led::run()
 {
     unsigned long currentm = millis();
     if (blinkFlag && (currentm - time) >  msdelay)

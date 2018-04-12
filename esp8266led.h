@@ -16,7 +16,7 @@ class esp8266led
         void blinkDelay(int ms = 1000);
         void blinkOn();
         void blinkOff();
-        void blink();
+        void run();
     private:
         uint8_t _pin;
         boolean blinkFlag = false;
